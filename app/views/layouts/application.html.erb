@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="description" content="Bootstrap Admin App + Ruby on Rails">
+   <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
+   <title>Angle - Bootstrap Admin Template</title>
+   <!-- =============== VENDOR STYLES ===============-->
+   <%= stylesheet_link_tag 'base' %>
+   <!-- =============== VIEW VENDOR STYLES ===============-->
+   <%= stylesheet_link_tag params[:controller] %>
+   <%= yield :vendor_css_area %>
+   <!-- =============== APP STYLES ===============-->
+   <%= stylesheet_link_tag 'application', media: 'all', id: "maincss" %>
+   <%= csrf_meta_tags %>
+</head>
+
+<body>
+   <div class="wrapper">
+      <!-- top navbar-->
+      <header class="topnavbar-wrapper">
+         <%= render partial: "layouts/partials/topnavbar" %>
+      </header>
+      <!-- sidebar-->
+      <aside class="aside-container">
+         <%= render partial: "layouts/partials/sidebar" %>
+      </aside>
+      <!-- offsidebar-->
+      <aside class="offsidebar d-none">
+         <%= render partial: "layouts/partials/offsidebar" %>
+      </aside>
+      <!-- Main section-->
+      <section class="section-container">
+         <!-- Page content-->
+         <div class="content-wrapper">
+            <%= yield %>
+         </div>
+      </section>
+      <!-- Page footer-->
+      <footer class="footer-container">
+         <%= render partial: "layouts/partials/footer" %>
+      </footer>
+   </div>
+   <!-- =============== VENDOR SCRIPTS ===============-->
+   <%= javascript_include_tag 'base' %>
+   <!-- =============== VIEW VENDOR SCRIPTS ===============-->
+   <%= javascript_include_tag params[:controller] %>
+   <%= yield :vendor_js_area %>
+   <!-- =============== APP SCRIPTS ===============-->
+   <%= javascript_include_tag 'application' %>
+
+   <%= yield :body_area %>
+
+</body>
+
+</html>

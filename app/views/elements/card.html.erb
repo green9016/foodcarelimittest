@@ -1,0 +1,363 @@
+<div class="content-heading">
+   <div>Cards
+      <small>Cards can contain almost any kind of element inside</small>
+   </div>
+</div>
+<div class="container-fluid">
+   <!-- START row-->
+   <div class="row">
+      <div class="col-lg-4">
+         <!-- START card-->
+         <div class="card card-default" id="cardDemo1">
+            <div class="card-header">Collapsible Card
+               <a class="float-right" href="#" data-tool="card-collapse" data-toggle="tooltip" title="Collapse Card">
+                  <em class="fa fa-minus"></em>
+               </a>
+            </div>
+            <div class="card-wrapper collapse show">
+               <div class="card-body">
+                  <p>Card can be collapsed clicking on the chevron up/down icon on the top right corner</p>
+               </div>
+               <div class="card-footer">Card Footer</div>
+            </div>
+         </div>
+         <!-- END card-->
+      </div>
+      <div class="col-lg-4">
+         <!-- START card-->
+         <div class="card card-default card-demo" id="cardDemo3">
+            <div class="card-header">Initially collapsed Card
+               <a class="float-right" href="#" data-tool="card-dismiss" data-toggle="tooltip" title="Close Card">
+                  <em class="fa fa-times"></em>
+               </a>
+               <a class="float-right" href="#" data-tool="card-collapse" data-toggle="tooltip" title="Collapse Card">
+                  <em class="fa fa-plus"></em>
+               </a>
+            </div>
+            <!-- .card-wrapper is the element to be collapsed-->
+            <div class="card-wrapper collapse">
+               <div class="card-body">
+                  <p>Initially collapsed Card</p>
+               </div>
+               <div class="card-footer">Card Footer</div>
+            </div>
+         </div>
+         <!-- END card-->
+      </div>
+      <div class="col-lg-4">
+         <!-- START card-->
+         <div class="card card-default card-demo" id="cardDemo2">
+            <div class="card-header">Dismissable Card
+               <a class="float-right" href="#" data-tool="card-dismiss" data-toggle="tooltip" title="Close Card">
+                  <em class="fa fa-times"></em>
+               </a>
+            </div>
+            <div class="card-body">
+               <p>Card can be dismissed by clicking on the cross icon icon on the top right corner</p>
+            </div>
+         </div>
+         <!-- END card-->
+      </div>
+   </div>
+   <!-- END row-->
+   <h4 class="page-header">Card Refresh</h4>
+   <!-- START row-->
+   <div class="row">
+      <div class="col-lg-4">
+         <!-- START card-->
+         <div class="card card-default card-demo" id="cardDemoRefresh1">
+            <div class="card-header">Standard Spinner
+               <a class="float-right" href="#" data-tool="card-refresh" data-toggle="tooltip" title="Refresh Card" data-spinner="standard">
+                  <em class="fas fa-sync"></em>
+               </a>
+            </div>
+            <div class="card-body">
+               <p>Click on the refresh icon to see how it triggers a refresh-event while it shows a spinner</p>
+            </div>
+         </div>
+         <!-- END card-->
+      </div>
+      <div class="col-lg-4">
+         <!-- START card-->
+         <div class="card card-default card-demo" id="cardDemoRefresh2">
+            <div class="card-header">Custom Spinner
+               <a class="float-right" href="#" data-tool="card-refresh" data-toggle="tooltip" title="Refresh Card" data-spinner="traditional">
+                  <em class="fas fa-sync"></em>
+               </a>
+            </div>
+            <div class="card-body">
+               <p>Click on the refresh icon to see how it triggers a refresh-event while it shows a spinner</p>
+            </div>
+         </div>
+         <!-- END card-->
+      </div>
+      <div class="col-lg-4">
+         <!-- START card-->
+         <div class="card card-default card-demo" id="cardDemoRefresh3">
+            <div class="card-header">Another Spinner
+               <a class="float-right" href="#" data-tool="card-refresh" data-toggle="tooltip" title="Refresh Card" data-spinner="line back-and-forth grow">
+                  <em class="fas fa-sync"></em>
+               </a>
+            </div>
+            <div class="card-body">
+               <p>See the list of allowed spinner at the Spinners page. A real use example is at the chart page.</p>
+            </div>
+         </div>
+         <!-- END card-->
+      </div>
+   </div>
+   <!-- END row-->
+</div>
+<h4 class="page-header">Card Styles</h4>
+<div class="row">
+   <div class="col-lg-4">
+      <div class="card text-white bg-primary mb-3">
+         <div class="card-header">Header</div>
+         <div class="card-body">
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
+         </div>
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <div class="card card-default mb-3">
+         <div class="card-header">Header</div>
+         <div class="card-body">
+            <h5 class="card-title">Card Default card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
+         </div>
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <div class="card text-white bg-success mb-3">
+         <div class="card-header">Header</div>
+         <div class="card-body">
+            <h5 class="card-title">Success card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="row">
+   <div class="col-lg-4">
+      <div class="card text-white bg-danger mb-3">
+         <div class="card-header">Header</div>
+         <div class="card-body">
+            <h5 class="card-title">Danger card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
+         </div>
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <div class="card text-white bg-warning mb-3">
+         <div class="card-header">Header</div>
+         <div class="card-body">
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
+         </div>
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <div class="card text-white bg-info mb-3">
+         <div class="card-header">Header</div>
+         <div class="card-body">
+            <h5 class="card-title">Info card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="row">
+   <div class="col-lg-6">
+      <div class="card bg-light mb-3">
+         <div class="card-header">Header</div>
+         <div class="card-body">
+            <h5 class="card-title">Light card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
+         </div>
+      </div>
+   </div>
+   <div class="col-lg-6">
+      <div class="card text-white bg-dark mb-3">
+         <div class="card-header">Header</div>
+         <div class="card-body">
+            <h5 class="card-title">Dark card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="row">
+   <div class="col-lg-4">
+      <div class="card mb-3 border-primary">
+         <div class="card-header text-white bg-primary">Header</div>
+         <div class="card-body">
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
+         </div>
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <div class="card mb-3 border-secondary">
+         <div class="card-header bg-secondary">Header</div>
+         <div class="card-body">
+            <h5 class="card-title">Card Default card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
+         </div>
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <div class="card mb-3 border-success">
+         <div class="card-header text-white bg-success">Header</div>
+         <div class="card-body">
+            <h5 class="card-title">Success card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="row">
+   <div class="col-lg-4">
+      <div class="card mb-3 border-danger">
+         <div class="card-header text-white bg-danger">Header</div>
+         <div class="card-body">
+            <h5 class="card-title">Danger card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
+         </div>
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <div class="card mb-3 border-warning">
+         <div class="card-header text-white bg-warning">Header</div>
+         <div class="card-body">
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
+         </div>
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <div class="card mb-3 border-info">
+         <div class="card-header text-white bg-info">Header</div>
+         <div class="card-body">
+            <h5 class="card-title">Info card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
+         </div>
+      </div>
+   </div>
+</div>
+<h4 class="page-header">Card Deck</h4>
+<div class="mb-4">
+   <div class="card-deck">
+      <div class="card card-default">
+         <div class="card-header">Demo content</div>
+         <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+         </div>
+         <div class="card-footer">
+            <div class="text-sm text-muted">Last updated 3 mins ago</div>
+         </div>
+      </div>
+      <div class="card card-default">
+         <div class="card-header">Demo content</div>
+         <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+         </div>
+         <div class="card-footer">
+            <div class="text-sm text-muted">Last updated 3 mins ago</div>
+         </div>
+      </div>
+      <div class="card card-default">
+         <div class="card-header">Demo content</div>
+         <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+         </div>
+         <div class="card-footer">
+            <div class="text-sm text-muted">Last updated 3 mins ago</div>
+         </div>
+      </div>
+   </div>
+</div>
+<h4 class="page-header">Accordion</h4>
+<div id="accordion">
+   <div class="card card-default mb-1">
+      <div class="card-header" id="headingOne">
+         <h4 class="mb-0"><a class="text-inherit" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" href="">Collapsible Group Item #1</a>
+         </h4>
+      </div>
+      <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
+         <div class="card-body border-top">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+            put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+            farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.</div>
+      </div>
+   </div>
+   <div class="card card-default mb-1">
+      <div class="card-header" id="headingTwo">
+         <h4 class="mb-0"><a class="text-inherit collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" href="">Collapsible Group Item #2</a>
+         </h4>
+      </div>
+      <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
+         <div class="card-body border-top">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+            put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+            farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.</div>
+      </div>
+   </div>
+   <div class="card card-default mb-1">
+      <div class="card-header" id="headingThree">
+         <h4 class="mb-0"><a class="text-inherit collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" href="">Collapsible Group Item #3</a>
+         </h4>
+      </div>
+      <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
+         <div class="card-body border-top">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+            put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+            farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.</div>
+      </div>
+   </div>
+</div>
+<h4 class="page-header">Tabs</h4>
+<!-- START row-->
+<div class="row">
+   <div class="col-xl-12">
+      <!-- START card-->
+      <div class="card card-default" id="cardDemo14">
+         <div class="card-header">Basic Tabs</div>
+         <div class="card-body">
+            <div role="tabpanel">
+               <!-- Nav tabs-->
+               <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item" role="presentation"><a class="nav-link active" href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a>
+                  </li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a>
+                  </li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a>
+                  </li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a>
+                  </li>
+               </ul>
+               <!-- Tab panes-->
+               <div class="tab-content">
+                  <div class="tab-pane active" id="home" role="tabpanel">Suspendisse velit erat, vulputate sit amet feugiat a, lobortis nec felis.</div>
+                  <div class="tab-pane" id="profile" role="tabpanel">Integer lobortis commodo auctor.</div>
+                  <div class="tab-pane" id="messages" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                  <div class="tab-pane" id="settings" role="tabpanel">Sed commodo tellus ut mi tristique pharetra.</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- END card-->
+   </div>
+</div>
+<!-- END row-->
+<div class="jumbotron jumbotron-fluid">
+   <h1 class="display-4">Hello, world!</h1>
+   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+   <hr class="my-4" />
+   <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+   <p class="lead"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+   </p>
+</div>

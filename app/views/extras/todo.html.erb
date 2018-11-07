@@ -1,0 +1,102 @@
+<div class="content-heading">
+   <div>Todo List
+      <small>Keeping track of tasks</small>
+   </div>
+   <button class="ml-auto btn btn-danger">Clear All Items</button>
+</div>
+<div class="row todo">
+   <div class="col-lg-3">
+      <div class="pr-3">
+         <form class="mb-4">
+            <div class="form-group">
+               <input class="form-control" type="text" placeholder="Task title.." required="required" />
+            </div>
+            <div class="form-group">
+               <textarea class="form-control" placeholder="Type a description.." rows="8"></textarea>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Add Todo</button>
+         </form>
+      </div>
+   </div>
+   <div class="col-lg-9 todo-item-list">
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+         <div class="card mb-0 todo-item todo-complete">
+            <div class="card-header">
+               <p class="text-bold mb-0">
+                  <span class="clickable" data-toggle="collapse-disabled" data-parent="#accordion" data-target="#collapseOne">
+                     <span class="close">&times;</span>
+                     <span class="inline checkbox c-checkbox">
+                        <label>
+                           <input id="todo-item-0" type="checkbox" />
+                           <span class="fa fa-check"></span>
+                        </label>
+                     </span>
+                     <span class="todo-title">Meeting with Mark at 7am.</span>
+                     <span class="todo-edit fas fa-pencil-alt"></span>
+                  </span>
+               </p>
+            </div>
+            <div class="collapse" id="collapseOne">
+               <div class="card-body">
+                  <p>
+                     <span>Pellentesque convallis mauris eu elit imperdiet quis eleifend quam aliquet.</span>
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="card mb-0 todo-item">
+            <div class="card-header">
+               <p class="text-bold mb-0">
+                  <span class="clickable collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo">
+                     <span class="close">&times;</span>
+                     <span class="inline checkbox c-checkbox">
+                        <label>
+                           <input id="todo-item-1" type="checkbox" />
+                           <span class="fa fa-check"></span>
+                        </label>
+                     </span>
+                     <span class="todo-title">Call Sonya. Talk about the new project.</span>
+                     <span class="todo-edit fas fa-pencil-alt"></span>
+                  </span>
+               </p>
+            </div>
+            <div class="collapse" id="collapseTwo">
+               <div class="card-body">
+                  <p>
+                     <span class="text-muted">No item description</span>
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="card mb-0 todo-item">
+            <div class="card-header">
+               <p class="text-bold mb-0">
+                  <span class="clickable collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree">
+                     <span class="close">&times;</span>
+                     <span class="inline checkbox c-checkbox">
+                        <label>
+                           <input id="todo-item-2" type="checkbox" />
+                           <span class="fa fa-check"></span>
+                        </label>
+                     </span>
+                     <span class="todo-title">Find a new place for vacations</span>
+                     <span class="todo-edit fas fa-pencil-alt"></span>
+                  </span>
+               </p>
+            </div>
+            <div class="collapse" id="collapseThree">
+               <div class="card-body">
+                  <p>
+                     <span class="text-muted">No item description</span>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <p class="text-right">
+         <span>1 Completed</span>-
+         <span>2 Pending</span>
+      </p>
+      <!-- end ngIf: items.length > 0-->
+   </div>
+</div>
