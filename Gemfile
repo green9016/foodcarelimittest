@@ -7,14 +7,15 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+ruby '2.5.3'
 gem 'rails', '5.1.0'
 
 # HEROKU doesn't support sqlite3.
 # Comment this gem
-gem 'sqlite3'
+##gem 'sqlite3'
 # and uncomment the following
-# gem 'pg', '~> 0.20'
-# gem 'thin'
+gem 'pg'
+gem 'thin'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
@@ -47,6 +48,10 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13.0'
   gem 'selenium-webdriver'
+
+  # for debugging
+  gem 'ruby-debug-ide'
+  gem 'debase'
 end
 
 group :development do
