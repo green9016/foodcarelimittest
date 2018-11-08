@@ -6,10 +6,8 @@
     "license": "https://wrapbootstrap.com/help/licenses",
     "private": true,
     "scripts": {
-        "napa": "napa",
-        "install": "npm run napa",
-        "modernizr": "modernizr -c modernizr-config.json -d vendor/assets/javascripts/modernizr.js",
-        "postinstall": "npm run modernizr"
+        "install": "napa",
+        "postinstall": "modernizr -c modernizr-config.json -d vendor/assets/javascripts/modernizr.js"
     },
     "napa": {
         "flot": "flot/flot#v0.8.3",
@@ -85,7 +83,8 @@
         "x-editable": "1.5.1"
     },
     "devDependencies": {
-        "napa": "3.0.0"
+        "napa": "3.0.0",
+        "heroku-cli": "^6.15.31"
     },
     "engines": {
         "node": "8.11.1",
