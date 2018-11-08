@@ -15,6 +15,7 @@ gem 'rails', '5.1.0'
 ##gem 'sqlite3'
 # and uncomment the following
 gem 'pg', '>= 0.18', '< 2.0'
+gem 'rails_12factor'
 gem 'thin'
 
 # Use Puma as the app server

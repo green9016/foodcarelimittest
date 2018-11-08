@@ -25,19 +25,19 @@
 ##  database: db/production.sqlite3
 
 
-# default: &default
-#   adapter: postgresql
-#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-#   timeout: 5000
+default: &default
+  adapter: postgresql
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
 
-# development:
-#   <<: *default
-#   database: nutrition_development
+development:
+  <<: *default
+  database: foodcarelimittest_development
 
-# test:
-#   <<: *default
-#   database: nutrition_test
+test:
+  <<: *default
+  database: foodcarelimittest_test
 
-# production:
-#   <<: *default
-#   database: nutrition_production
+production:
+  <<: *default
+  database: foodcarelimittest_production
