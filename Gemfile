@@ -14,7 +14,7 @@ gem 'rails', '5.1.0'
 # Comment this gem
 ##gem 'sqlite3'
 # and uncomment the following
-gem 'pg'
+gem 'pg', '>= 0.18', '< 2.0'
 gem 'thin'
 
 # Use Puma as the app server

@@ -195,7 +195,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   debase
   jbuilder (~> 2.5)
-  pg
+  pg (>= 0.18, < 2.0)
   puma (~> 3.7)
   rails (= 5.1.0)
   ruby-debug-ide
