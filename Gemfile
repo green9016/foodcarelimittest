@@ -14,7 +14,7 @@ gem 'rails', '5.1.0'
 # Comment this gem
 ##gem 'sqlite3'
 # and uncomment the following
-gem 'pg', '1.0.0'
+gem 'pg', '~> 0.18'
 gem 'rails_12factor'
 gem 'thin'
 
