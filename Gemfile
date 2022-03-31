@@ -19,7 +19,7 @@ gem 'rails_12factor'
 gem 'thin'
 
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 4.3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0.7'
